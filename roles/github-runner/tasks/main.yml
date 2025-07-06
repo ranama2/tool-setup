@@ -12,6 +12,15 @@
     owner: github
     group: github
 
+- name: chekc already runner configured status
+  ansible.builtin.stat:
+    path: /actions-runner/.runner
+  register: runner-stat
+
+- name: debug
+  debug:
+    msg: "{{ runner-stat }}"
+
 - name: Download github runner
   ansible.builtin.unarchive:
     src: https://github.com/actions/runner/releases/download/v2.325.0/actions-runner-linux-x64-2.325.0.tar.gz
