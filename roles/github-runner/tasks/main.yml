@@ -19,3 +19,9 @@
     owner: github
     group: github
     remote_src: yes
+
+- name: Configure Github runner
+  ansible.builtin.shell: ./config.sh --url https://github.com/aminrana37 --token AHRVVYSKIF2QYIQIJAIDTD3INILVY
+
+- name: Configure Github runner
+  ansible.builtin.shell: ./run.sh
