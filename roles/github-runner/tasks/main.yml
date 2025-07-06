@@ -31,7 +31,7 @@
   register: runner_stat
 
 - name: Configure Github runner
-  ansible.builtin.shell: ./config.sh --url https://github.com/aminrana37 --token AHRVVYSKIF2QYIQIJAIDTD3INILVY --unattended
+  ansible.builtin.shell: ./config.sh --url https://github.com/aminrana37 --token AHRVVYQASD4VAUVXWTQNMGDINIVFI --unattended
   args:
     chdir: /actions-runner
   become_user: github
