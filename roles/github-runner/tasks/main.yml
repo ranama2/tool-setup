@@ -22,6 +22,12 @@
 
 - name: Configure Github runner
   ansible.builtin.shell: ./config.sh --url https://github.com/aminrana37 --token AHRVVYSKIF2QYIQIJAIDTD3INILVY
+  args:
+    chdir: /actions-runner
+  become_user: github
 
 - name: Configure Github runner
   ansible.builtin.shell: ./run.sh
+  args:
+    chdir: /actions-runner
+  become_user: github
