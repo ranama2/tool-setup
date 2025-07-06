@@ -20,6 +20,11 @@
     group: github
     remote_src: yes
 
+- name: Install libicu dependency package
+  ansible.builtin.dnf:
+    name: libicu
+    state: installed
+
 - name: Configure Github runner
   ansible.builtin.shell: ./config.sh --url https://github.com/aminrana37 --token AHRVVYSKIF2QYIQIJAIDTD3INILVY
   args:
