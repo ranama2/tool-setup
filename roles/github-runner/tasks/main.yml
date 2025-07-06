@@ -31,8 +31,8 @@
     chdir: /actions-runner
   become_user: github
 
-- name: Configure Github runner
-  ansible.builtin.shell: ./run.sh
-  args:
-    chdir: /actions-runner
-  become_user: github
+#- name: Configure Github runner
+#  ansible.builtin.shell: ./run.sh
+#  args:
+#    chdir: /actions-runner
+#  become_user: github
