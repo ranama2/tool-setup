@@ -7,7 +7,7 @@ terraform {
   }
 }
 resource "aws_iam_role" "main" {
-  name = "${var.name}"-role
+  name = "${var.name}-role"
 
   assume_role_policy = jsondecode({
     Version = "2012-10-17"
