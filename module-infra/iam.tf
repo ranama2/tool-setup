@@ -47,6 +47,6 @@ resource "aws_iam_policy" "main" {
 }
 
 resource "aws_iam_role_policy_attachment" "main" {
-  policy_arn         = aws_iam_role.main.name
-  role               = aws_iam_policy.main.arn
+  policy_arn         = aws_iam_policy.main.arn
+  role               = aws_iam_role.main.name
 }
