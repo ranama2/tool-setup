@@ -1,3 +1,3 @@
 locals {
-  policy_action = concat(["account:ListRegions"], var.iam_policy["Actoin"])
+  policy_action = concat(["account:ListRegions"], var.iam_policy["Actoins"])
 }
