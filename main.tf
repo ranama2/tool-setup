@@ -7,4 +7,5 @@ module "tool-infra" {
   name              = each.key
   ports             = each.value["ports"]
   zone_id           = var.zone_id
+  iam_policy        = each.value["iam_policy"]
 }

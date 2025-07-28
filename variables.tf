@@ -9,8 +9,12 @@ variable "zone_id" {
 variable "tools" {
   default = {
     github-runner = {
-      instance_type     = "t3.small"
-      ports = {}
+      instance_type = "t3.small"
+      ports         = {}
+      iam_policy    = {
+        Actions     = []
+        Resource    = []
+      }
       }
     }
   }
